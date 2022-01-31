@@ -1,0 +1,21 @@
+<style>
+    table, tr, td {
+        border: 1px black solid;
+        border-collapse: collapse;
+    }
+</style>
+<div style="text-align: center;">
+    <h3>User data</h3>
+    <table style="margin-left: auto; margin-right: auto;">
+        <tr>
+            <td>name</td>
+            <td>DOB</td>
+        </tr>
+        <ng-container *ngFor="let d of userData">
+            <tr>
+                <td>{{d['name']}}</td>
+                <td>{{d['date']}}</td>
+            </tr>
+        </ng-container>
+    </table>
+</div>
